@@ -1,0 +1,27 @@
+<div id="user-signup" class="container">
+    <h2> User Details </h2>
+
+   <p>User First Name :{{userCtrl.userData.firstname}} </p>
+    
+   <p> User Last Name  :{{userCtrl.userData.lastname}}</p>
+    
+   <p> User Email      :{{userCtrl.userData.email}} </p>
+    
+   <p> User Phone      :{{userCtrl.userData.phone}} </p>
+    
+   <!--// Favorite Item   :{{userCtrl.userData.menuItem}}-->
+    <div ng-if="userCtrl.isUserSignedIn()">
+    Not Signed Up Yet. <a ui-sref="public.signup">
+                 Sign Up Now</a>
+    </div>
+
+
+
+     <menu-item  menu-item="userCtrl.userData.menuItem">
+    </menu-item> 
+
+ 
+
+
+
+</div>
